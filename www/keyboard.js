@@ -30,7 +30,6 @@ Keyboard.styleDark = function(dark) {
 
 Keyboard.isVisible = false;
 
-module.exports = Keyboard;
-
-
-
+if (window.top.location.search.indexOf('enableripple') === -1) {
+	module.exports = Keyboard;
+}
